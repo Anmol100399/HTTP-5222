@@ -1,0 +1,250 @@
+body{
+    padding-bottom: 50px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+.bg-white {
+background-color: white;
+}
+
+footer {
+position: fixed;
+bottom: 0;
+width: 100%;
+height: 50px;
+background-color: #343a40;
+z-index: 1000;
+text-align: center;
+padding: 15px 20px;
+}
+
+/* Event List Page */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.card-container {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card-container:hover{
+    box-shadow: 0 4px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1{
+    text-align: center;
+}
+
+.detail-section {
+    padding: 15px;
+}
+
+/* Event Details Page */
+
+.title {
+    font-size: 2.5rem;
+}
+
+/* Sales Ended Section */
+.event-ended-alert {
+    background-color: #f87171;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+    
+.event-details-container {
+    display: flex;
+    flex-direction: column;
+}
+.event-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.event-details-content {
+    display: flex;
+    flex-direction: column;
+}
+.event-details-leftcontent h2 p {
+    padding: 20px;
+    margin-top: 0;
+    margin: 5px 0;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-media a:hover {
+    color: #007bff;
+}
+
+.event-details-right {
+    width: 100%;
+    padding: 20px;
+}
+
+/* ticket details */
+.ticket-details {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.ticket-details h3 {
+    margin-top: 0;
+}
+
+/* Weather Forecast Styles */
+.weather-forecast {
+    margin-top: 2rem;
+}
+
+.weather-title {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.today-title {
+    color: #000;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.today-title:hover {
+    color: #fff;
+}
+
+.weather-row .weather-box {
+    padding: 10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.weather-row .weather-box:hover {
+    background-color: #ffffff52;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.col-6.col-md-4.col-lg-3.mt-3.weather-box {
+    max-width: 20%;
+}
+
+.weather-card {
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card .weather-date {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4b5563;
+}
+
+.weather-card .weather-icon {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.weather-card .weather-temp,
+.weather-card .weather-feels-like {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+
+/* Background Animation */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .event-details-content {
+        flex-direction: row;
+    }
+
+    .event-details-leftcontent {
+        width: 70%;
+        padding-right: 20px;
+    }
+
+.event-details-right {
+        width: 30%;
+    }
+    .card-container {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .event-details-right {
+    width: 100%;
+    }
+    .details-container {
+    margin: 0;
+    }
+    .card-container {
+    flex: 0 0 calc(100% - 20px);
+    }
+}
